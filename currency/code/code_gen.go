@@ -263,8 +263,6 @@ const (
 	RSD = currency.Code("RSD")
 	// SCR represents 'SCR' currency code
 	SCR = currency.Code("SCR")
-	// SLL represents 'SLL' currency code
-	SLL = currency.Code("SLL")
 	// SLE represents 'SLE' currency code
 	SLE = currency.Code("SLE")
 	// SGD represents 'SGD' currency code
@@ -335,6 +333,8 @@ const (
 	YER = currency.Code("YER")
 	// ZMW represents 'ZMW' currency code
 	ZMW = currency.Code("ZMW")
-	// ZWL represents 'ZWL' currency code
-	ZWL = currency.Code("ZWL")
+	// ZWG represents 'ZWG' currency code
+	ZWG = currency.Code("ZWG")
+	// XTS represents 'XTS' currency code
+	XTS = currency.Code("XTS")
 )

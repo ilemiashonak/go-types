@@ -911,13 +911,6 @@ var currenciesByCode = map[string]currency{
 		number:        `690`,
 		decimalPlaces: 2,
 	},
-	`SLL`: {
-		countries:     Countries{`SIERRA LEONE`},
-		currency:      `Leone`,
-		code:          `SLL`,
-		number:        `694`,
-		decimalPlaces: 2,
-	},
 	`SLE`: {
 		countries:     Countries{`SIERRA LEONE`},
 		currency:      `Leone`,
@@ -1163,12 +1156,19 @@ var currenciesByCode = map[string]currency{
 		number:        `967`,
 		decimalPlaces: 2,
 	},
-	`ZWL`: {
+	`ZWG`: {
 		countries:     Countries{`ZIMBABWE`},
-		currency:      `Zimbabwe Dollar`,
-		code:          `ZWL`,
-		number:        `932`,
+		currency:      `Zimbabwe Gold`,
+		code:          `ZWG`,
+		number:        `924`,
 		decimalPlaces: 2,
+	},
+	`XTS`: {
+		countries:     Countries{`[TEST] XTS`},
+		currency:      `Codes specifically reserved for testing purposes`,
+		code:          `XTS`,
+		number:        `963`,
+		decimalPlaces: 1,
 	},
 }
 
@@ -1747,13 +1747,6 @@ var currenciesByNumber = map[string]currency{
 		number:        `690`,
 		decimalPlaces: 2,
 	},
-	`694`: {
-		countries:     Countries{`SIERRA LEONE`},
-		currency:      `Leone`,
-		code:          `SLL`,
-		number:        `694`,
-		decimalPlaces: 2,
-	},
 	`702`: {
 		countries:     Countries{`SINGAPORE`},
 		currency:      `Singapore Dollar`,
@@ -1929,6 +1922,13 @@ var currenciesByNumber = map[string]currency{
 		number:        `901`,
 		decimalPlaces: 2,
 	},
+	`924`: {
+		countries:     Countries{`ZIMBABWE`},
+		currency:      `Zimbabwe Gold`,
+		code:          `ZWG`,
+		number:        `924`,
+		decimalPlaces: 2,
+	},
 	`925`: {
 		countries:     Countries{`SIERRA LEONE`},
 		currency:      `Leone`,
@@ -1976,13 +1976,6 @@ var currenciesByNumber = map[string]currency{
 		currency:      `Peso Convertible`,
 		code:          `CUC`,
 		number:        `931`,
-		decimalPlaces: 2,
-	},
-	`932`: {
-		countries:     Countries{`ZIMBABWE`},
-		currency:      `Zimbabwe Dollar`,
-		code:          `ZWL`,
-		number:        `932`,
 		decimalPlaces: 2,
 	},
 	`933`: {
@@ -2096,6 +2089,13 @@ var currenciesByNumber = map[string]currency{
 		code:          `XPF`,
 		number:        `953`,
 		decimalPlaces: 0,
+	},
+	`963`: {
+		countries:     Countries{`[TEST] XTS`},
+		currency:      `Codes specifically reserved for testing purposes`,
+		code:          `XTS`,
+		number:        `963`,
+		decimalPlaces: 1,
 	},
 	`967`: {
 		countries:     Countries{`ZAMBIA`},
@@ -3999,12 +3999,6 @@ var currenciesByCountry = map[string]currencies{
 		{
 			countries:     Countries{`SIERRA LEONE`},
 			currency:      `Leone`,
-			code:          `SLL`,
-			number:        `694`,
-			decimalPlaces: 2,
-		}, {
-			countries:     Countries{`SIERRA LEONE`},
-			currency:      `Leone`,
 			code:          `SLE`,
 			number:        `925`,
 			decimalPlaces: 2,
@@ -4424,10 +4418,18 @@ var currenciesByCountry = map[string]currencies{
 	}, `ZIMBABWE`: {
 		{
 			countries:     Countries{`ZIMBABWE`},
-			currency:      `Zimbabwe Dollar`,
-			code:          `ZWL`,
-			number:        `932`,
+			currency:      `Zimbabwe Gold`,
+			code:          `ZWG`,
+			number:        `924`,
 			decimalPlaces: 2,
+		},
+	}, `[TEST] XTS`: {
+		{
+			countries:     Countries{`[TEST] XTS`},
+			currency:      `Codes specifically reserved for testing purposes`,
+			code:          `XTS`,
+			number:        `963`,
+			decimalPlaces: 1,
 		},
 	}, `BAHAMAS`: {
 		{
@@ -5676,10 +5678,10 @@ var currenciesByCurrency = map[string]currency{
 		decimalPlaces: 2,
 	},
 	`Leone`: {
-		countries:     Countries{`SIERRA LEONE`, `SIERRA LEONE`},
+		countries:     Countries{`SIERRA LEONE`},
 		currency:      `Leone`,
-		code:          `SLL`,
-		number:        `694`,
+		code:          `SLE`,
+		number:        `925`,
 		decimalPlaces: 2,
 	},
 	`Singapore Dollar`: {
@@ -5913,11 +5915,18 @@ var currenciesByCurrency = map[string]currency{
 		number:        `967`,
 		decimalPlaces: 2,
 	},
-	`Zimbabwe Dollar`: {
+	`Zimbabwe Gold`: {
 		countries:     Countries{`ZIMBABWE`},
-		currency:      `Zimbabwe Dollar`,
-		code:          `ZWL`,
-		number:        `932`,
+		currency:      `Zimbabwe Gold`,
+		code:          `ZWG`,
+		number:        `924`,
 		decimalPlaces: 2,
+	},
+	`Codes specifically reserved for testing purposes`: {
+		countries:     Countries{`[TEST] XTS`},
+		currency:      `Codes specifically reserved for testing purposes`,
+		code:          `XTS`,
+		number:        `963`,
+		decimalPlaces: 1,
 	},
 }
